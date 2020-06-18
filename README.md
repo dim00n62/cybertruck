@@ -1,1 +1,1 @@
-init
+[Demo of CyberTruck](https://dim00n62.github.io/cybertruck/public/)
