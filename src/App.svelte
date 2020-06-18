@@ -46,6 +46,12 @@
       <a-entity position="1.3 0.385 -.28" animation="property: rotation; to: 360 0 0; dur: 1000; easing: linear; loop: true">
         <a-entity position="0 -.285 0" rotation="0 180 0" gltf-model="url(./wheel.glb)"></a-entity>
       </a-entity>
+
+      <a-entity light="type: point; intensity: 2; distance: 5; decay: 1; color: #F00;"
+          position="2 .9 -1"></a-entity>
+      <a-entity light="type: point; intensity: 4; distance: 5; decay: 1; color: #FFF;"
+          position="2 .5 3"></a-entity>
+
     </a-entity>
 
     <a-entity position="{roadPosition} 0 0">
@@ -56,8 +62,7 @@
 
 
     <a-sky color="#4875b3" src="./sky.jpg"></a-sky>
-    <a-entity light="color: #FFF; intensity: 1.5" position="-1 4 0"></a-entity>
-    <a-entity light="type: ambient; color: #BBB"></a-entity>
+    <a-entity light="type: ambient; color: #BBB;"></a-entity>
 
     <a-camera position="{cameraPosition}" rotation="{cameraRotation}" look-controls="enabled: false"></a-camera>
   </a-scene>
